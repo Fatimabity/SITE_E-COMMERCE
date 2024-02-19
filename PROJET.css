@@ -10,7 +10,7 @@ header {
     height: 100vh;
     background-image: url(image/navcar2.jpg);
     background-size: cover;
-    background-repeat: repeat-x;
+  
 }
 
 nav {
@@ -82,48 +82,59 @@ nav img {
 }
 
 /*style du main*/
+main{
+    width: 100%;
+    height: 100%;
+}
+
+/*section1*/
 .section1 {
     background-color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
     justify-content: space-around;
-    min-height: 100vh;
+  
 }
-.texte{
+
+.texte {
     margin-top: 50px;
     font-size: 40px;
     font-weight: 900;
     text-align: center;
     width: 100%;
 }
-.fixe{
+
+.fixe {
     color: white;
     display: inline-block;
     vertical-align: top;
     margin-top: 30px;
 
 }
-.animation{
+
+.animation {
     display: inline-block;
     height: 113px;
     line-height: 110px;
     overflow: hidden;
-    
+
 }
 
-.animation span{
+.animation span {
     position: relative;
     color: rgb(71, 191, 238);
     display: block;
     text-align: left;
     text-shadow: 0 0 10px rgb(71, 191, 238);
 }
-.animation div{
+
+.animation div {
     animation: 9s wordchange;
     animation-iteration-count: infinite;
     animation-timing-function: steps(1);
 }
-.animation span:after{
+
+.animation span:after {
     content: "";
     position: absolute;
     left: 0;
@@ -136,62 +147,62 @@ nav img {
     animation-timing-function: steps(100);
     animation-fill-mode: backwards;
 }
-@keyframes animtexte{
-    0%{
+
+@keyframes animtexte {
+    0% {
         left: 0;
     }
-    50%{
+
+    50% {
         left: 100%;
     }
-    100%{
+
+    100% {
         left: 0;
     }
 }
-@keyframes wordchange{
-    0%{
+
+@keyframes wordchange {
+    0% {
         margin-top: 0;
     }
-    33.333%{
+
+    33.333% {
         margin-top: -113px;
     }
-    66.666%{
+
+    66.666% {
         margin-top: -226px;
     }
-    100%{
+
+    100% {
         margin-top: 0;
     }
 }
-.description{
-    color: rgb(255, 255, 255);
+
+.description {
+    color: rgba(255,255,255,.3);
+    font-size: 23px;
     margin-top: 50px;
-    margin-left: 300px;
+    margin-left: 150px;
     margin-bottom: 50px;
-    padding: 50px;
-    width: 500px;
-    height: 400px;
-    position: relative;
-    background: repeating-conic-gradient(from var(--a),rgb(71, 191, 238) 50%,rgb(71, 191, 238) 20%,transparent 80%,rgb(71, 191, 238) 0%);
-    animation: animate 4s linear infinite;
-    border: solid 2px rgb(189, 189, 189);
+    padding: 40px;
+    width: 800px;
+    height: 550px;
+    border: solid 2px white;
     border-radius: 20px;
+    
 }
-@property --a{
-    syntax: '<angle>';
-    inherits: false;
-    initial-value: 0;
+
+
+/*section2*/
+.section2{
+    width: 100%;
+    height: 150vh;
+    background-image: url(https://static.wixstatic.com/media/536484_17325c60103047188965e2bec3860134~mv2.webp);
+    background-size: cover;
+    background-blend-mode: darken;
+    background-color: gba(0, 0, 0, 0.7);
+  
 }
-@keyframes animate{
-    0%{
-        --a: 0deg;
-    }
-    100%{
-        --a: 360deg;
-    }
-}
-.description:hover{
-    box-shadow: 0 0 15px rgb(71, 191, 238);
-    transform: scale(1.1);
-}
-.description h1{
-    text-decoration: underline;
-}
+
