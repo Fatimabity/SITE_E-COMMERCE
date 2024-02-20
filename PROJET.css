@@ -10,7 +10,7 @@ header {
     height: 100vh;
     background-image: url(image/navcar2.jpg);
     background-size: cover;
-  
+
 }
 
 nav {
@@ -82,7 +82,7 @@ nav img {
 }
 
 /*style du main*/
-main{
+main {
     width: 100%;
     height: 100%;
 }
@@ -93,7 +93,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: space-around;
-  
+
 }
 
 .texte {
@@ -181,7 +181,7 @@ main{
 }
 
 .description {
-    color: rgba(255,255,255,.3);
+    color: rgba(255, 255, 255, .3);
     font-size: 23px;
     margin-top: 50px;
     margin-left: 150px;
@@ -191,18 +191,230 @@ main{
     height: 550px;
     border: solid 2px white;
     border-radius: 20px;
-    
+
 }
 
 
 /*section2*/
-.section2{
+.section2 {
+    display: flex;
+    background-color: white;
     width: 100%;
-    height: 150vh;
+    height: 100vh;
     background-image: url(https://static.wixstatic.com/media/536484_17325c60103047188965e2bec3860134~mv2.webp);
-    background-size: cover;
+    /*background-size: cover;
     background-blend-mode: darken;
-    background-color: gba(0, 0, 0, 0.7);
-  
+    background-color: gba(0, 0, 0, 0.7);*/
 }
 
+.container2 {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+}
+
+.container2 span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: solid 2px rgb(0, 0, 0);
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: blob 6s linear infinite;
+
+}
+
+.container2:hover span:nth-child(1) {
+    border: none;
+    background: rgb(0, 0, 0);
+    color: white;
+}
+
+.container2 span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: solid 2px rgb(0, 0, 0);
+    border-radius: 48% 72% 73% 47% / 51% 54% 66% 69%;
+    transition: 0.5s;
+    animation: blob 4s linear infinite;
+}
+
+.container2:hover span:nth-child(2) {
+    border: none;
+    background: rgb(0, 0, 0);
+}
+
+.container2 span:nth-child(3) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: solid 2px rgb(0, 0, 0);
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: blob3 10s linear infinite;
+}
+
+.container2:hover span:nth-child(3) {
+    border: none;
+    background: rgb(0, 0, 0);
+}
+
+@keyframes blob {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes blob3 {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.blob {
+    position: relative;
+    padding: 40px 60px;
+    text-align: center;
+    transition: 0.5s;
+    z-index: 1000;
+
+}
+
+.blob:hover {
+    color: white;
+}
+
+.blob a {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    border: 2px solid rgb(71, 191, 238);
+    padding: 6px 18px;
+    text-decoration: none;
+    color: rgb(71, 191, 238);
+    font-weight: 600;
+    border-radius: 73% 27% 44% 56% / 49% 44% 56% 51%;
+}
+
+.blob a:hover {
+    background: rgb(71, 191, 238);
+    color: black;
+}
+
+
+/*.blob p {
+    font-family: "Montserrat Medium";
+    max-width: 40ch;
+    text-align: center;
+    transform: scale(0.94);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  }
+  @keyframes scale {
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  span {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+  }
+  
+  span:nth-child(1) {
+    animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(2) {
+    animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(3) {
+    animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(4) {
+    animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(5) {
+    animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(6) {
+    animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(7) {
+    animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(8) {
+    animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(9) {
+    animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(10) {
+    animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(11) {
+    animation: fade-in 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(12) {
+    animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(13) {
+    animation: fade-in 0.8s 1.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(14) {
+    animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(15) {
+    animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(16) {
+    animation: fade-in 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(17) {
+    animation: fade-in 0.8s 1.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(18) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  @keyframes fade-in {
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+  }*/
