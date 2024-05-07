@@ -5,13 +5,12 @@
 }
 
 /*style du header*/
-header {
+/*header {
     width: 100%;
     height: 100vh;
     background-image: url(image/navcar2.jpg);
     background-size: cover;
-
-}
+}*/
 
 nav {
     display: flex;
@@ -72,6 +71,7 @@ nav a:hover {
     width: 100%;
     height: 100px;
     position: fixed;
+    z-index: 100;
 }
 
 nav img {
@@ -321,11 +321,12 @@ main {
 }
 
 /*section3*/
-.section3{
+.section3 {
     background: #f3f3f3;
     /*min-height: 100vh;*/
 }
-.service{
+
+.service {
     display: flex;
     min-height: 100vh;
     /*width: 100%;
@@ -338,7 +339,8 @@ main {
     /*justify-content: space-between;*/
     transform: skewY(-10deg);
 }
-.card{
+
+.card {
     background: white;
     width: 300px;
     height: 400px;
@@ -346,7 +348,8 @@ main {
     position: relative;
     margin: 30px;
 }
-.card:before{
+
+.card:before {
     content: "";
     position: absolute;
     top: -15px;
@@ -356,9 +359,10 @@ main {
     background: rgb(71, 191, 238);
     transform-origin: bottom;
     transform: skewX(45deg);
-    transition: 0,5s;
+    transition: 0, 5s;
 }
-.card:after{
+
+.card:after {
     content: "";
     position: absolute;
     top: -15px;
@@ -368,13 +372,15 @@ main {
     background: rgb(71, 191, 238);
     transform-origin: left;
     transform: skewY(45deg);
-    transition: 0,5s;
+    transition: 0, 5s;
     border-bottom: 200px solid #d9d9d9;
 }
- .card:hover{
+
+.card:hover {
     transform: translateY(-40px);
 }
-.imgbox{
+
+.imgbox {
     display: flex;
     position: relative;
     width: 300px;
@@ -384,46 +390,79 @@ main {
     align-items: center;
     flex-direction: column;
 }
-.imgbox img{
+
+.imgbox img {
     max-width: 100px;
 }
-.imgbox h3{
+
+.imgbox h3 {
     position: relative;
     color: white;
     margin-top: 10px;
 }
-.content{
+
+.content {
     position: relative;
     /*width: 100px;
     height: 200px;*/
     padding: 20px;
-    background:  white;
+    background: white;
 }
-.content:before{
+
+.content:before {
     content: "";
     position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
     height: 400px;
-    background: linear-gradient(transparent,transparent,rgba(0,0,0,.1));
+    background: linear-gradient(transparent, transparent, rgba(0, 0, 0, .1));
     transform-origin: bottom;
     transform: skewX(45deg);
     transition: 0.5s;
     pointer-events: none;
     z-index: -1;
 }
-.card:hover .content:before{
+
+.card:hover .content:before {
     transform: translateY(40px) skewX(45deg);
     filter: blur(5px);
     opacity: 0.5s;
 }
-.card:nth-child(1){
+
+.card:nth-child(1) {
     z-index: 3;
 }
-.card:nth-child(2){
+
+.card:nth-child(2) {
     z-index: 2;
 }
-.card:nth-child(3){
+
+.card:nth-child(3) {
     z-index: 1;
 }
+
+/*section4*/
+.section4 {
+    background: rgba(0, 0, 0, 0.7) url(image/contact.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    width: 100%;
+    height: 100vh;
+    color: white;
+}
+
+.container4{
+    width: 500px;
+    height: 300px;
+    text-align: left;
+    padding-left: 100px;
+    padding-top: 200px;
+}
+
+/*section5*/
+.section5{
+    background-color: black;
+}
+
+
