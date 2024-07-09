@@ -7,9 +7,9 @@
     <title>CENTRAL CAR:contact</title>
     <link rel="icon" href="image/central car icon.png">
     <link rel="stylesheet" href="PROJET.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
-    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -47,43 +47,67 @@
                 </p>
             </div>
         </section>
-<!--            <h5 style="color: rgb(71, 191, 238);">LOCATION DE LUXE central car</h5>
-                <h1 style="color: rgb(255, 254, 254); font-size: 80px;">Contacts</h1>-->
-        <section>
-            <div class="formulaire">
-                <div class="contactinfo">
-                    <div>
-                        <h2>contact info</h2>
-                        <ul class="info">
-                            <li>
-                                <span><i class="fa-sharp fa-solid fa-location-dot"></i></span>
-                                <span>OUEST FOIRE </span>
-                            </li>
-                            <li>
-                                <span><i class="fa-sharp fa-solid fa-envelope"></i></span>
-                                <span>centralcar@gmail.com</span>
-                            </li>
-                            <li>
-                                <span>
-                                    <i class="fa-sharp fa-solid fa-phone"></i>
-                                </span>
-                                <span>
-                                    00221 70 823 07 82
-                                    <br>
-                                    00221 78 157 44 65
-                                </span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+
+        <section class="maps">
+            <div class="carte">
+                <iframe src="https://www.google.com/maps/d/embed?mid=1leXjVQRzF0C3yW-gA-OK2rfzzIKGPlU&ehbc=2E312F" width="90%" height="480" style="background-color: rgb(39, 39, 39);;"></iframe>
             </div>
+        </section>
+
+        <section class="formulaire">
+            <div style=" padding-top: 100px; text-align: center; padding-bottom: 30px;">
+                <h4 style="color: rgb(71, 191, 238); font-size: 12px; margin-bottom: 5px;">NOUS SOMMES À VOTRE SERVICE
+                </h4>
+                <h1 style="color: white; font-size: 40px;">Formulaire de contact</h1>
+            </div>
+            <div class="container-form">
+                <form id="contactForm">
+                    <label for="name"></label>
+                    <input type="text" id="prénom" name="prénom" required placeholder="Prénom">
+
+                    <label for="name"></label>
+                    <input type="text" id="nom" name="nom" required placeholder="Nom de famille">
+                    <br>
+                    <br>
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" required placeholder="E-mail">
+
+                    <label for="subject"></label>
+                    <input type="text" id="subject" name="subject" required placeholder="Objet">
+                    <br>
+                    <br>
+                    <label for="message"></label>
+                    <textarea id="message" name="message" rows="6" required placeholder="Message"></textarea>
+                    <br> <br>
+                    <div class="checkbox">
+                        <div class="terms">
+                            <input type="checkbox" id="accept-terms" name="accept-terms" required>
+                            <label for="accept-terms"><a href="#">je souhaite m'abonner a la newsletter</a></label>
+                            <br> <br>
+                            <input type="checkbox" id="accept-terms" name="accept-terms" required>
+                            <label for="accept-terms"> <a href="#"> J'accepte les conditions d'utilisation</a></label>
+                            <br>
+                        </div>
+                        <div class="robot">
+                            <input type="checkbox" id="not-robot" name="not-robot"  required>
+                            <label for="not-robot">Je ne suis pas un robot</label>
+                            <br> <br>
+                        </div>
+                    </div>
+                    <button class="validcontact" type="submit"><a href="" style="text-decoration: none;">ENVOYER</a></button>
+                </form>
+            </div>
+
+
         </section>
 
     </main>
 
     <footer>
-
+        Copyright © 2024|Tous droits réservés par CENTRAL CAR
     </footer>
+
+    <script src="PROJET.js"></script>
 </body>
 
 </html>
